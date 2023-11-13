@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> SliceX </title>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	   <script src="https://d3js.org/d3.v7.min.js"></script>
+	   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   </head>
+   <body>
+
+<div class="container">
+
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+
+    <div class="logo">
+     
+      <a href="#home"><img width="100px" height="auto" src="./images/logo (2).png"></a>
+    </div>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+	  <li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+	  <li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon" onclick="toggleMenu()">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu" style="display:none">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+	  <li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+	  <li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<div id="hero-section">
+	<div id="hero-left" class="banner-txt">
+		<div id="hero-text">
+			<h1>New Era of <br><span class="text-gradient">Real Estate</span><br> Investment </h1>
+		</div>
+		<div id="hero-buttons">
+			<button class="the-button">Whitepaper</button>
+			<div id="hero-intro-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+				  <path d="M26 51C39.8071 51 51 39.8071 51 26C51 12.1929 39.8071 1 26 1C12.1929 1 1 12.1929 1 26C1 39.8071 12.1929 51 26 51Z" stroke="url(#paint0_linear_34_106)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				  <path d="M21 16L36 26L21 36V16Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				  <defs>
+					<linearGradient id="paint0_linear_34_106" x1="26" y1="1" x2="28.5" y2="113.5" gradientUnits="userSpaceOnUse">
+					  <stop stop-color="#21E786"/>
+					  <stop offset="1" stop-color="#3BACE2"/>
+					</linearGradient>
+				  </defs>
+				</svg>
+				<span id="hero-video-intro-text">Intro Video<span>
+			</div>
+		</div>
+	</div>
+	<div id="hero-right">
+	<div class="countdown-box ms-md-auto">
+	<div class="blur"></div>
+                            <h4>PRESALE STARTS IN</h4>
+                            <div class="countdown">
+                                <div id="clock"></div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-transitiongoal="75" style="width: 75%;" aria-valuenow="75"></div>
+                                </div>
+                                <!-- End of .progress -->
+                                <p>$11,087 pledged of $25,000 goal</p>
+                                <a href="#" class="the-button">PARCHASE TOKENS</a>
+                            </div>
+                            <!-- End of .countdown -->
+                        </div>
+	</div>
+</div>
+
+<div id="all-clients">
+<div id="companies">
+	  <div class="companyLogo">
+    <img src="./images/company2.png" alt="Company companyLogo 1">
+  </div>
+  <div class="companyLogo bg-gradient">
+    <img src="./images/company1.png" alt="Company companyLogo 2">
+  </div>
+  <div class="companyLogo">
+    <img src="./images/company2.png" alt="Company companyLogo 3">
+  </div>
+  <div class="companyLogo bg-gradient">
+    <img src="./images/company1.png" alt="Company companyLogo 4">
+  </div>
+  <div class="companyLogo">
+    <img src="./images/company2.png" alt="Company companyLogo 5">
+  </div>
+  <div class="companyLogo bg-gradient">
+    <img src="./images/company1.png" alt="Company companyLogo 6">
+  </div>
+</div>
+</div>
+
+<div id="solution-section" class="float-left full-width">
+	<h2>Benefits Of Using Our <span class="text-gradient">Solution</span></h2>
+	<span class="heading-description">In sed velit tincidunt tortor rhoncus hendrerit. Sed non lobortis purus, tempus efficitur tellus. Curabitur.</span>
+	
+	<div id="tabs-section-container">
+		 <div class="tabs">
+			<div class="tab selected" onclick="showTab('tab1', event)">BUSINESS</div>
+			<div class="tab" onclick="showTab('tab2', event)">MY COIN</div>
+		  </div>
+
+	  <div id="tab1" class="tab-content">
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="77" viewBox="0 0 62 77" fill="none">
+  <path d="M38 3H10C8.14348 3 6.36301 3.74979 5.05025 5.08442C3.7375 6.41906 3 8.22921 3 10.1167V67.05C3 68.9375 3.7375 70.7476 5.05025 72.0822C6.36301 73.4169 8.14348 74.1667 10 74.1667H52C53.8565 74.1667 55.637 73.4169 56.9497 72.0822C58.2625 70.7476 59 68.9375 59 67.05V24.35L38 3Z" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 3V24.35H59" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 42.1416H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 56.375H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 27.9084H20.5H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>COMPLIANCE</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="97" viewBox="0 0 55 97" fill="none">
+  <path d="M27.25 3V93.4237" stroke="#21E786" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47.4583 19.4407H17.1458C13.3941 19.4407 9.79608 20.9563 7.14322 23.6541C4.49036 26.3519 3 30.011 3 33.8263C3 37.6416 4.49036 41.3006 7.14322 43.9984C9.79608 46.6962 13.3941 48.2119 17.1458 48.2119H37.3542C41.1059 48.2119 44.7039 49.7275 47.3568 52.4253C50.0096 55.1231 51.5 58.7822 51.5 62.5975C51.5 66.4127 50.0096 70.0718 47.3568 72.7696C44.7039 75.4674 41.1059 76.983 37.3542 76.983H3" stroke="#21E786" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>TRANSPARENCY</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="81" viewBox="0 0 96 81" fill="none">
+  <path d="M68.5272 78V69.6667C68.5272 65.2464 66.8005 61.0072 63.727 57.8816C60.6535 54.756 56.4849 53 52.1383 53H19.3606C15.014 53 10.8454 54.756 7.77187 57.8816C4.69836 61.0072 2.97168 65.2464 2.97168 69.6667V78" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35.7502 36.3333C44.8015 36.3333 52.1391 28.8714 52.1391 19.6667C52.1391 10.4619 44.8015 3 35.7502 3C26.6989 3 19.3613 10.4619 19.3613 19.6667C19.3613 28.8714 26.6989 36.3333 35.7502 36.3333Z" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M93.1115 78.0001V69.6667C93.1088 65.9739 91.9002 62.3866 89.6754 59.4681C87.4507 56.5495 84.3358 54.4649 80.8198 53.5417" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64.4302 3.54175C67.9555 4.45967 71.0801 6.54467 73.3115 9.46804C75.5428 12.3914 76.754 15.9869 76.754 19.6876C76.754 23.3883 75.5428 26.9837 73.3115 29.9071C71.0801 32.8305 67.9555 34.9155 64.4302 35.8334" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>SMART MANAGEMENT</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="63" height="83" viewBox="0 0 63 83" fill="none">
+  <path d="M59.0747 79.0001V31.9167" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.75 79V3.66675" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4.42676 79V50.75" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>CONVENIENCE</p>
+		</div>
+	  </div>
+
+	  <div id="tab2" class="tab-content" style="display: none;">
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="77" viewBox="0 0 62 77" fill="none">
+  <path d="M38 3H10C8.14348 3 6.36301 3.74979 5.05025 5.08442C3.7375 6.41906 3 8.22921 3 10.1167V67.05C3 68.9375 3.7375 70.7476 5.05025 72.0822C6.36301 73.4169 8.14348 74.1667 10 74.1667H52C53.8565 74.1667 55.637 73.4169 56.9497 72.0822C58.2625 70.7476 59 68.9375 59 67.05V24.35L38 3Z" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 3V24.35H59" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 42.1416H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 56.375H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 27.9084H20.5H17" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>COMPLIANCE 2</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="97" viewBox="0 0 55 97" fill="none">
+  <path d="M27.25 3V93.4237" stroke="#21E786" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47.4583 19.4407H17.1458C13.3941 19.4407 9.79608 20.9563 7.14322 23.6541C4.49036 26.3519 3 30.011 3 33.8263C3 37.6416 4.49036 41.3006 7.14322 43.9984C9.79608 46.6962 13.3941 48.2119 17.1458 48.2119H37.3542C41.1059 48.2119 44.7039 49.7275 47.3568 52.4253C50.0096 55.1231 51.5 58.7822 51.5 62.5975C51.5 66.4127 50.0096 70.0718 47.3568 72.7696C44.7039 75.4674 41.1059 76.983 37.3542 76.983H3" stroke="#21E786" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>TRANSPARENCY 2</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="81" viewBox="0 0 96 81" fill="none">
+  <path d="M68.5272 78V69.6667C68.5272 65.2464 66.8005 61.0072 63.727 57.8816C60.6535 54.756 56.4849 53 52.1383 53H19.3606C15.014 53 10.8454 54.756 7.77187 57.8816C4.69836 61.0072 2.97168 65.2464 2.97168 69.6667V78" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35.7502 36.3333C44.8015 36.3333 52.1391 28.8714 52.1391 19.6667C52.1391 10.4619 44.8015 3 35.7502 3C26.6989 3 19.3613 10.4619 19.3613 19.6667C19.3613 28.8714 26.6989 36.3333 35.7502 36.3333Z" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M93.1115 78.0001V69.6667C93.1088 65.9739 91.9002 62.3866 89.6754 59.4681C87.4507 56.5495 84.3358 54.4649 80.8198 53.5417" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64.4302 3.54175C67.9555 4.45967 71.0801 6.54467 73.3115 9.46804C75.5428 12.3914 76.754 15.9869 76.754 19.6876C76.754 23.3883 75.5428 26.9837 73.3115 29.9071C71.0801 32.8305 67.9555 34.9155 64.4302 35.8334" stroke="#21E786" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>SMART MANAGEMENT 2</p>
+		</div>
+		<div class="box">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="63" height="83" viewBox="0 0 63 83" fill="none">
+  <path d="M59.0747 79.0001V31.9167" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.75 79V3.66675" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4.42676 79V50.75" stroke="#21E786" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+		  <p>CONVENIENCE 2</p>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+<div id="product-section" class="float-left full-width">
+	<h2><span class="text-gradient">Product </span>Details</h2>
+	<span class="heading-description">In sed velit tincidunt tortor rhoncus hendrerit. Sed non lobortis purus, tempus efficitur tellus. Curabitur.</span>
+	
+		<div id="tabs-section-container">
+		 <div class="tabs">
+			<div class="tabpro selectedthis" onclick="showThreeTabs('one', event)">ONE</div>
+			<div class="tabpro" onclick="showThreeTabs('two', event)">TWO</div>
+			<div class="tabpro" onclick="showThreeTabs('three', event)">THREE</div>
+		  </div>
+
+	  <div id="one" class="tab-contentpro">
+		<div class="product-section float-left full-width">
+			<div class="pro-img float-left">
+				<img src="./images/pro-img.png">
+			</div>
+			<div class="pro-details float-left">
+				<span class="pro-top-text float-left">
+				Secure and Cloud
+Based Software Mangement
+</span>
+				<p class="pro-bottom-text float-left">Pellentesque auctor, nibh sit amet rhoncus sollicitudin, lorem dolor fringilla sapien, at condimentum metus purus a lectus. Pellentesque sed interdum libero, vel vehicula dolor. Proin eget sagittis ex. Donec porta libero in purus semper.</p>
+<p class="pro-bottom-text float-left">
+Ut malesuada justo condimentum. Sed porta egestas dui sed tempus. Sed sollicitudin vehicula sapien sed ullamcorper. </p>
+			</div>
+		</div>
+	  </div>
+	  <div id="two" class="tab-contentpro">
+	  </div>
+	  <div id="three" class="tab-contentpro">
+	  </div>
+</div>
+</div>
+
+
+<div id="token-section" class="float-left full-width">
+	<h2><span class="text-gradient">Tokenomics</span></h2>
+	
+	<div id="token-area" class="float-left">
+		<div id="token-left" class="float-left">
+			<canvas id="donutChart" width="354" height="354"></canvas>
+			
+					<div id="tabs-section-container">
+		 <div class="tokentabs">
+			<div class="tabtoken selectedthis" onclick="showTokenTabs('token1', event)">FUNDING ALLOCATION</div>
+			<div class="tabtoken" onclick="showTokenTabs('token2', event)">TOKEN DISTRIBUTION</div>
+		  </div>
+
+	  <div id="token1" class="tab-contenttoken">
+		<div class="token-column">
+			<div class="option">
+			  <div class="color-block" style="background-color: #2C468A;"></div>
+			  <span>Contingeny: 72%</span>
+			</div>
+			<div class="option">
+			  <div class="color-block" style="background-color: #1A3740;"></div>
+			  <span>Investor: 72%</span>
+			</div>
+			<div class="option">
+			  <div class="color-block" style="background-color: #21E786;"></div>
+			  <span>Legal & Regulation: 18%</span>
+			</div>
+		  </div>
+
+		  <div class="token-column">
+			<div class="option">
+			  <div class="color-block" style="background-color: #1A2227;"></div>
+			  <span>Business Development: 20%</span>
+			</div>
+			<div class="option">
+			  <div class="color-block" style="background-color: #1C6251;"></div>
+			  <span>Poland: 15%</span>
+			</div>
+			<div class="option">
+			  <div class="color-block" style="background-color: #25306A;"></div>
+			  <span>Czech Republic: 50%</span>
+			</div>
+		  </div>
+	  </div>
+	  <div id="token2" class="tab-contenttoken">
+		
+		
+	  </div>
+	  
+</div>
+
+		</div>
+		<div id="token-right" class="float-right">
+			<div id="token-images">
+				<img id="tk1" src="./images/pngwing 1 (1).png">
+				<img id="tk2" src="./images/pngwing 1.png">
+				
+			</div>
+			<p>BNB is a decentralized, open-source blockchain with smart contract</p>
+			<div class="token-column">
+			<div class="option">
+			  <div class="color-block" style="background-color: #1C6251; text-align:center; line-height:28px">1</div>
+			  <span>Contingeny: 72%</span>
+			</div>
+			<div class="option">
+			  <div class="color-block" style="background-color: #1C6251; text-align:center; line-height:28px">2</div>
+			  <span>Investor: 72%</span>
+			</div>
+			<div class="option">
+			   <div class="color-block" style="background-color: #1C6251; text-align:center; line-height:28px">3</div>
+			  <span>Legal & Regulation: 18%</span>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<div id="about-section" class="float-left full-width">
+<h2> <span class="text-gradient">About Us</span></h2>
+		<div class="about-cont  float-left full-width">
+					
+					<div class="about-details float-left">
+						
+				<p class="pro-bottom-text float-left">Pellentesque auctor, nibh sit amet rhoncus sollicitudin, lorem dolor fringilla sapien, at condimentum metus purus a lectus. Pellentesque sed interdum libero, vel vehicula dolor. Proin eget sagittis ex. Donec porta libero in purus semper.</p>
+<p class="pro-bottom-text float-left">
+Ut malesuada justo condimentum. Sed porta egestas dui sed tempus. Sed sollicitudin vehicula sapien sed ullamcorper. </p>
+			</div>
+			<div class="pro-img float-left">
+						<img src="./images/aboutus.png">
+					</div>
+		</div>
+</div>
+
+<div id="roadmap-section" class="float-left full-width">
+	<h2><span class="text-gradient">Our Roadmap</span></h2>
+	<span class="heading-description">In sed velit tincidunt tortor rhoncus hendrerit. Sed non lobortis purus, tempus efficitur tellus. Curabitur.</span>
+	
+	<div id="timeline-container">
+		<svg id="timeline"></svg>
+	</div>
+</div>
+
+
+
+<div id="team-section" class="float-left full-width">
+	<h2>Team <span class="text-gradient">Players</span></h2>
+	<span class="heading-description">In sed velit tincidunt tortor rhoncus hendrerit. Sed non lobortis purus, tempus efficitur tellus. Curabitur.</span>
+	
+	<div id="tabs-section-container">
+		 <div class="tabs">
+			<div class="tabteam selectedthis" onclick="showTeamTab('teamtab1', event)">OPERATING TEAM</div>
+			<div class="tabteam" onclick="showTeamTab('teamtab2', event)">ADVISORY TEAM</div>
+		  </div>
+
+	  <div id="teamtab1" class="tab-contentteam">
+		<div class="boxteam">
+		  <img src="./images/team1.png">
+		  <p>John Leo</p>
+		  <span>Visual Designer</span>
+		</div>
+		<div class="boxteam">
+		  <img src="./images/team2.png">
+		  <p>Bran Glee</p>
+		  <span>Legal & DPO</span>
+		</div>
+		<div class="boxteam">
+		  <img src="./images/team3.png">
+		  <p>Miles Taylor</p>
+		  <span>Marketer</span>
+		</div>
+		<div class="boxteam">
+		  <img src="./images/team4.png">
+		  <p>Obaida Ryan</p>
+		  <span>Founder & CEO</span>
+		</div>
+		<div class="boxteam">
+		  <img src="./images/team1.png">
+		  <p>Roy Mason</p>
+		  <span>Technology Officer</span>
+		</div>
+	  </div>
+
+	  <div id="teamtab2" class="tab-contentteam" style="display: none;">
+	  
+		
+	  </div>
+	</div>
+</div>
+
+
+<div id="news-section" class="float-left full-width">
+	<h2>Latest<span class="text-gradient">News</span></h2>
+	<span class="heading-description">Vivamus eu sem tempus ante hendrerit lobortis et vehicula elit. Integer sagittis.</span>
+	
+	<div class="news-container">
+    <div class="column">
+	<div class="overlaybox"></div>
+      <img src="./images/1.png" alt="Image 1">
+	 
+      <p class="date">Aug, 10</p>
+      <p class="description">Bitcoin still consolidating above 200 SMA!</p>
+    </div>
+
+    <div class="column">
+	<div class="overlaybox"></div>
+      <img src="./images/2.png" alt="Image 2">
+      <p class="date">July, 10</p>
+      <p class="description">Bitcoin still consolidating above 200 SMA!</p>
+    </div>
+
+    <div class="column">
+	<div class="overlaybox"></div>
+      <img src="./images/3.png" alt="Image 3">
+      <p class="date">November, 10</p>
+      <p class="description">Bitcoin still consolidating above 200 SMA!</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="app-coming-container" class="float-left full-width">
+<div id="app-coming-soon">
+	<div id="left-sec-app" class="float-left">
+		<span id="main-big-text">Control Application <br>From Your Mobile</span>
+		<img src="./images/coming.png">
+	</div>
+	<div id="right-sec-app" class="float-left">
+		<img src="./images/phone-img.png">
+	</div>
+</div>
+</div>
+<footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <div class="column-heading">Useful Links</div>
+        <ul class="page-links">
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+		  <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="column-heading">Useful Links</div>
+        <ul class="page-links">
+          <li><a href="#">Page 4</a></li>
+          <li><a href="#">Page 5</a></li>
+          <li><a href="#">Page 6</a></li>
+		  <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="column-heading">Useful Links</div>
+        <ul class="page-links">
+          <li><a href="#">Page 7</a></li>
+          <li><a href="#">Page 8</a></li>
+          <li><a href="#">Page 9</a></li>
+		  <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="column-heading">Subscribe</div>
+        <div class="subscribe-form">
+			<span>Exerci tation ullamcorper suscipit lobortis nisl</span>
+          <input type="email" class="subscribe-input" placeholder="Enter your email">
+          <button class="subscribe-button"><i class="fas fa-paper-plane icon"></i></button>
+        </div>
+      </div>
+    </div>
+<div class="gradient-border"></div>
+    <div class="copyright">
+      Copyright © 2023 SLICEX. All rights reserved.
+    </div>
+  </footer>
+</div>
+<script>
+    function toggleMenu() {
+	console.log("toggle menu");
+        var overlayMenu = document.querySelector('.overlay-menu');
+		console.log("menu display========",overlayMenu.style.display);
+        overlayMenu.style.display = (overlayMenu.style.display === 'contents') ? 'none' : 'contents';
+    }
+	
+	 // Set the date we're counting down to
+        var countDownDate = new Date("Nov 30, 2023 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var countdown = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+
+            // Calculate hours, minutes, and seconds
+            var hours = Math.floor(distance / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+			document.getElementById("clock").innerHTML = "<span>"+hours+"<br>Hours</span>:<span>"+minutes+"<br>Minutes</span>:<span>"+seconds+"<br>Seconds</span>"
+           // document.getElementById("clock").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+		
+		
+function showTab(tabId, event) {
+  // Hide all tab contents
+  document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+    tabContent.style.display = 'none';
+  });
+
+  // Remove 'selected' class from all tabs
+  document.querySelectorAll('.tab').forEach(function(tab) {
+    tab.classList.remove('selected');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).style.display = 'flex';
+
+  // Add 'selected' class to the clicked tab
+  event.currentTarget.classList.add('selected');
+}
+
+// Show the default tab on page load
+showTab('tab1', { currentTarget: document.querySelector('.tab.selected') });
+
+
+function showThreeTabs(tabId, event) {
+  // Hide all tab contents
+  document.querySelectorAll('.tab-contentpro').forEach(function(tabContent) {
+    tabContent.style.display = 'none';
+  });
+
+  // Remove 'selected' class from all tabs
+  document.querySelectorAll('.tabpro').forEach(function(tab) {
+    tab.classList.remove('selectedthis');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).style.display = 'flex';
+
+  // Add 'selected' class to the clicked tab
+  event.currentTarget.classList.add('selectedthis');
+}
+
+// Show the default tab on page load
+showThreeTabs('one', { currentTarget: document.querySelector('.tabpro.selectedthis') });
+
+
+function showTeamTab(tabId, event) {
+  // Hide all tab contents
+  document.querySelectorAll('.tab-contentteam').forEach(function(tabContent) {
+    tabContent.style.display = 'none';
+  });
+
+  // Remove 'selected' class from all tabs
+  document.querySelectorAll('.tabteam').forEach(function(tab) {
+    tab.classList.remove('selectedthis');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).style.display = 'flex';
+
+  // Add 'selected' class to the clicked tab
+  event.currentTarget.classList.add('selectedthis');
+}
+
+// Show the default tab on page load
+showTeamTab('teamtab1', { currentTarget: document.querySelector('.tabteam.selectedthis') });
+
+
+function showTokenTabs(tabId, event) {
+  // Hide all tab contents
+  document.querySelectorAll('.tab-contenttoken').forEach(function(tabContent) {
+    tabContent.style.display = 'none';
+  });
+
+  // Remove 'selected' class from all tabs
+  document.querySelectorAll('.tabtoken').forEach(function(tab) {
+    tab.classList.remove('selectedthis');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).style.display = 'flex';
+
+  // Add 'selected' class to the clicked tab
+  event.currentTarget.classList.add('selectedthis');
+}
+
+// Show the default tab on page load
+showTokenTabs('token1', { currentTarget: document.querySelector('.tabtoken.selectedthis') });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sample data
+      var events = [
+        { date: new Date(2022, 0), label: 'March,2018' },
+        { date: new Date(2022, 1), label: 'May,2018' },
+        { date: new Date(2022, 2), label: 'July,2018' },
+        { date: new Date(2022, 3), label: 'September,2018' },
+        { date: new Date(2022, 4), label: 'November,2018' },
+      ];
+
+      // Set up the SVG container
+      var svg = d3.select("#timeline")
+        .attr("width", "100%")
+        .attr("height", "100%");
+
+      // Set up scales
+      var xScale = d3.scaleTime()
+        .domain(d3.extent(events, function(d) { return d.date; }))
+        .range([50, 750]);
+
+      // Draw the curved line
+      svg.append("path")
+        .datum(events)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 2)
+        .attr("d", d3.line()
+          .curve(d3.curveBasis)
+          .x(function(d) { return xScale(d.date); })
+          .y(function(d, i) { return i % 2 === 0 ? 100 : 200; })
+        );
+
+      // Draw event circles
+      svg.selectAll(".event")
+        .data(events)
+        .enter().append("circle")
+        .attr("class", "event")
+        .attr("cx", function(d) { return xScale(d.date); })
+        .attr("cy", function(d, i) { return i % 2 === 0 ? 100 : 200; })
+        .attr("r", 5);
+
+
+      // Draw event labels
+     svg.selectAll(".event-label")
+        .data(events)
+        .enter().append("g")
+        .attr("class", "event-label")
+        .each(function(d, i) {
+          // Append border rectangle
+          d3.select(this).append("rect")
+            .attr("x", xScale(d.date) - 75) // Adjust as needed
+            .attr("y", i % 2 === 0 ? 80 : 220)
+            .attr("width", 150)
+            .attr("height", 60)
+            .attr("fill", "white")
+            .attr("stroke", "black")
+            .attr("stroke-width", 2);
+
+          // Append text inside the border
+          d3.select(this).append("text")
+            .attr("x", xScale(d.date))
+            .attr("y", i % 2 === 0 ? 120 : 260)
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "middle")
+			.attr("stroke", "black")
+            .attr("stroke-width", 1)
+            .text(d.label);
+        });
+	  /*svg.selectAll(".event-label")
+        .data(events)
+        .enter().append("foreignObject")
+        .attr("class", "event-label")
+        .attr("x", function(d) { return xScale(d.date) + "%"; })
+        .attr("y", function(d, i) { return i % 2 === 0 ? "20%" : "80%"; })
+        .attr("width", 50) // Adjust the width as needed
+        .attr("height", 20) // Adjust the height as needed
+        .html(function(d) { return '<div style="width: 100%; height: 100%; text-align: center;">' + d.label + '</div>'; });
+    */
+    });
+	/*
+	
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sample data
+      var events = [
+        { date: new Date(2022, 0), label: 'March,2018' },
+        { date: new Date(2022, 1), label: 'May,2018' },
+        { date: new Date(2022, 2), label: 'July,2018' },
+        { date: new Date(2022, 3), label: 'September,2018' },
+        { date: new Date(2022, 4), label: 'November,2018' },
+      ];
+
+      // Set up the timeline container
+      var timeline = d3.select("#timeline");
+
+      // Set up scales
+      var xScale = d3.scaleTime()
+        .domain(d3.extent(events, function(d) { return d.date; }))
+        .range([0, 100]);
+
+      // Draw event labels with date data wrapped in HTML div
+      timeline.selectAll(".event-label")
+        .data(events)
+        .enter().append("foreignObject")
+        .attr("class", "event-label")
+        .attr("x", function(d) { return xScale(d.date) + "%"; })
+        .attr("y", function(d, i) { return i % 2 === 0 ? "20%" : "80%"; })
+        .attr("width", 50) // Adjust the width as needed
+        .attr("height", 20) // Adjust the height as needed
+        .html(function(d) { return '<div style="width: 100%; height: 100%; text-align: center;">' + d.label + '</div>'; });
+    });
+	*/
+  
+  </script>
+  <!--
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sample data
+      var events = [
+        { date: new Date(2022, 0), label: 'March,2018' },
+        { date: new Date(2022, 1), label: 'May,2018' },
+        { date: new Date(2022, 2), label: 'July,2018' },
+        { date: new Date(2022, 3), label: 'September,2018' },
+        { date: new Date(2022, 4), label: 'November,2018' },
+      ];
+
+      // Set up the timeline container
+      var timeline = d3.select("#timeline");
+
+      // Set up scales
+      var xScale = d3.scaleTime()
+        .domain(d3.extent(events, function(d) { return d.date; }))
+        .range([50, 750]);
+
+// Draw the curved line
+      timeline.append("path")
+        .datum(events)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1)
+        .attr("d", d3.line()
+          .curve(d3.curveBasis)
+          .x(function(d) { return xScale(d.date); })
+          .y(function(d, i) { return i % 2 === 0 ? 100 : 200; })
+        );
+		
+      
+
+      // Draw event labels with date data wrapped in HTML div
+      timeline.selectAll(".event-label")
+        .data(events)
+        .enter().append("foreignObject")
+        .attr("class", "event-label")
+        .attr("x", function(d) { return xScale(d.date) + "%"; })
+        .attr("y", function(d, i) { return i % 2 === 0 ? "20%" : "80%"; })
+        .attr("width", 50) // Adjust the width as needed
+        .attr("height", 20) // Adjust the height as needed
+        .html(function(d) { return '<div style="width: 100%; height: 100%; text-align: center;">' + d.label + '</div>'; });
+    });
+  </script>
+  -->
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Sample data for the donut chart with your color codes and percentages
+      var data = {
+       // labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5', 'Label 6'],
+        datasets: [{
+          data: [15, 5, 30, 20, 10, 20], // Adjust the values as needed
+          backgroundColor: ['#2C468A', '#1A3740', '#21E786', '#1A2227', '#1C6251', '#25306A'],
+          hoverBackgroundColor: ['#2C468A', '#1A3740', '#21E786', '#1A2227', '#1C6251', '#25306A'],
+        }]
+      };
+
+      // Set up the donut chart
+      var ctx = document.getElementById('donutChart').getContext('2d');
+      var donutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: {
+          cutoutPercentage: 50, // Adjust the cutout percentage to control the size of the hole
+          legend: {
+            display: false,
+          },
+        },
+      });
+    });
+  </script>
+   </body>
+</html>
